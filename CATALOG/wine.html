@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wine</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 30px 15px;
+        }
+
+        
+        .grid-3x3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px;                             
+            max-width: 900px;
+            width: 100%;
+        }
+
+       
+        .slot-card {
+            background-color: #ffffff;
+            border: 2px dashed #cbd5e1; 
+            border-radius: 12px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .slot-card:hover {
+            border-color: #3b82f6;
+            border-style: solid;
+            box-shadow: 0 8px 15px rgba(59, 130, 246, 0.15);
+        }
+
+        
+        .image-box {
+            width: 100%;
+            height: 180px; 
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+
+        
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            display: block;
+        }
+
+        
+        .slot-title {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 4px;
+        }
+
+        .slot-desc {
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        
+        @media (max-width: 768px) {
+            .grid-3x3 {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+        @media (max-width: 480px) {
+            .grid-3x3 {
+                grid-template-columns: 1fr; 
+            }
+        }
+        .tombol { display: inline-block; background: #25d366; color: #fff; padding: 8px 14px;
+              border-radius: 20px; text-decoration: none; margin-top: 8px; }
+    </style>
+</head>
+<body>
+
+    
+    <div class="grid-3x3">
+
+        <!-- SLOT 1 -->
+        <div class="slot-card">
+            <div class="image-box">
+                
+                <img src="gambar\wine (1).png" alt="Slot 1">
+            </div>
+            <div class="slot-title">Anggur merah</div>
+            <a href="https://wa.me/6285894628117" class="tombol">Pesan Sekarang</a>
+        </div>
+
+        <!-- SLOT 2 -->
+        <div class="slot-card">
+            <div class="image-box">
+                <img src="gambar\wine (2).png" alt="Slot 2">
+            </div>
+            <div class="slot-title">Anggur putih</div>
+            <a href="https://wa.me/6285894628117" class="tombol">Pesan Sekarang</a>
+        </div>
+
+        <!-- SLOT 3 -->
+        <div class="slot-card">
+            <div class="image-box">
+                <img src="gambar\wine (3).png" alt="Slot 3">
+            </div>
+            <div class="slot-title">Rose wine</div>
+            <a href="https://wa.me/6285894628117" class="tombol">Pesan Sekarang</a>
+        </div>
+
+        <!-- SLOT 4 -->
+        <div class="slot-card">
+            <div class="image-box">
+                <img src="gambar\wine (4).png" alt="Slot 4">
+            </div>
+            <div class="slot-title">Sparkling wine</div>
+            <a href="https://wa.me/6285894628117" class="tombol">Pesan Sekarang</a>
+        </div>
+
+        <!-- SLOT 5 -->
+        <div class="slot-card">
+            <div class="image-box">
+                <img src="gambar\wine (5).png" alt="Slot 5">
+            </div>
+            <div class="slot-title">Merlot</div>
+            <a href="https://wa.me/6285894628117" class="tombol">Pesan Sekarang</a>
+        </div>
+
+        <!-- SLOT 6 -->
+        <div class="slot-card">
+            <div class="image-box">
+                <img src="gambar\wine (6).png" alt="Slot 6">
+            </div>
+            <div class="slot-title">Sauvignon Blanc</div>
+            <a href="https://wa.me/6285894628117" class="tombol">Pesan Sekarang</a>
+        </div>
+
+        <!-- SLOT 7 -->
+        <div class="slot-card">
+            <div class="image-box">
+                <img src="gambar\wine (7).png" alt="Slot 7">
+            </div>
+            <div class="slot-title">Pinot Noir</div>
+            <a href="https://wa.me/6285894628117" class="tombol">Pesan Sekarang</a>
+        </div>
+
+        <!-- SLOT 8 -->
+        <div class="slot-card">
+            <div class="image-box">
+                <img src="gambar\wine (8).png" alt="Slot 8">
+            </div>
+            <div class="slot-title">Dessert wine</div>
+            <a href="https://wa.me/6285894628117" class="tombol">Pesan Sekarang</a>
+        </div>
+
+        <!-- SLOT 9 -->
+        <div class="slot-card">
+            <div class="image-box">
+                <img src="gambar\wine (9).png" alt="Slot 9">
+            </div>
+            <div class="slot-title">Port wine</div>
+            <a href="https://wa.me/6285894628117" class="tombol">Pesan Sekarang</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
